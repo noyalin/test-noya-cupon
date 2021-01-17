@@ -1,0 +1,14 @@
+<!--components/banner/searchBanner.wxml-->
+<view>
+  <image class='banner' src="../../images/banner.jpg" mode="widthFix"></image>
+
+  <view class="search-box">
+    <view class="search-box-item address">
+      <picker-city></picker-city>
+    </view>
+
+    <view class="search-box-item">
+      <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+    </view>
+  </view>
+</view>

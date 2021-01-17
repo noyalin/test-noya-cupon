@@ -1,0 +1,35 @@
+/* components/tabBox/tabBox.wxss */
+page{
+  background-color: #FFFFFF;
+  height: 100%;
+}
+
+.tab-title-box {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding-bottom: 4rpx;
+  background: #07c160;
+}
+
+.tab-title-box .title {
+  white-space: nowrap;
+  background-color: #07c160;
+  color: #ddd;
+  padding: 20rpx 8rpx;
+}
+
+.tab-title-box .title.active {
+  color: white;
+  font-weight: bold;
+  border-bottom: 6rpx solid #fff;
+}
+
+.tab-content {
+  padding: 40rpx 60rpx;
+  background: #f8f8f8;
+}
+
+.tab-content-card-wrap {
+  margin-bottom: 20rpx
+}

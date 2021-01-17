@@ -1,0 +1,21 @@
+<view>
+  <mp-sticky bindscroll="onScroll">
+    <view>
+      <view class="tab-title-box">
+        <view class="title {{activeTab === index ? 'active' : ''}}" 
+        wx:for="{{tabs}}"
+        wx:key="title"
+        data-item="{{item}}"
+        data-index="{{index}}"
+        bindtap="onTabCLick">
+          {{ item.title }}
+        </view>
+      </view>
+    </view>
+  </mp-sticky>
+  <view class="tab-content">
+    <view class="tab-content-card-wrap" wx:for="{{list}}" wx:key="index" >
+      <cupon-card item="{{item}}"></cupon-card>
+    </view>
+  </view>
+</view>

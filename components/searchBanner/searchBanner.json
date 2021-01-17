@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": { 
+    "picker-city": "/components/pickerCity/pickerCity",
+    "mp-searchbar": "/miniprogram_npm/weui-miniprogram/searchbar/searchbar"
+  }
+}

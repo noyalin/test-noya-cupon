@@ -1,0 +1,22 @@
+<!--components/cuponCard/cuponCard.wxml-->
+<view class="cuppon-card">
+  <view class="cuppon-card-head">
+      {{item.company}}
+  </view>
+  <view class="cuppon-card-main">
+    <view class="cuppon-image-wrap"><image class='banner' src="../../images/cupon.jpg"></image></view>
+    <view class="cuppon-content">
+      <view class="title">{{item.title}}</view>
+      <view class="amount">
+        <view class="value">{{item.amount}}元</view>
+        <view class="rule">满{{item.amount}}元可用</view>
+      </view>
+      <view class="des">线上使用</view>
+    </view>
+    <view class="cuppon-button">
+      <button>领取</button>
+      <view></view>
+      <view class="cupon-count">券已领{{item.count}}</view>
+    </view>
+  </view>
+</view>

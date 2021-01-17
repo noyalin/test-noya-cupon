@@ -1,0 +1,23 @@
+/* components/banner/searchBanner.wxss */
+.banner {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.search-box {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: rgb(0,0,0,0.1);
+}
+
+.search-box .search-box-item {
+  display: flex;
+  align-items: center;
+}
+
+.search-box .address {
+  flex: 1;
+}
